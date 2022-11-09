@@ -6,7 +6,15 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "title": ["Fredoka One", 'sans-serif'],
+        "body": ['Poppins', 'serif']
+      },
+      backgroundImage: {
+        'main-bg': "url('/school-bg.jpg')"
+      }
+    },
   },
   plugins: [],
 }
