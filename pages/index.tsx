@@ -105,7 +105,7 @@ const Homepage: NextPage = () => {
       <section className="grid md:grid-cols-2 lg:grid-cols-3">
         {juegos.map((juego) => (
           <article
-            className={`text-${juego.color}${juego.color == "purple" ? "-600" : ""} ${juego.bg == "purple" ? 'bg-purple-600' : 'bg-white'} p-6 flex flex-col justify-between gap-12`}
+            className={`${juego.color == 'purple' ? 'text-white bg-purple-600' : 'text-purple-600 bg-white'}  p-6 flex flex-col justify-between gap-12`}
             id={`juego${juego.id}`}
           >
             <header className="flex flex-col">
@@ -125,7 +125,7 @@ const Homepage: NextPage = () => {
             <Link
               href={juego.link}
               passHref
-              className={`flex items-center justify-center py-2 rounded-md border-2 ${juego.color == "purple" ?  'border-purple-600' : 'border-white'} ${juego.bg == "purple" ? 'hover:bg-white hover:text-purple-600' : 'hover:bg-purple-600 hover:text-white'}`}
+              className={`flex items-center justify-center py-2 rounded-md border-2 ${juego.color == "purple" ?  'border-white' : 'border-purple-600'}  ${juego.bg == "white" ? 'hover:bg-white hover:text-purple-600' : 'hover:bg-purple-600 hover:text-white'}`}
             >
               ¡Juega este!
             </Link>
