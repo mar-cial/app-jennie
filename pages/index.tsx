@@ -16,52 +16,52 @@ interface Juego {
 }
 const juegos: Juego[] = [
   {
-    titulo: '¿Qué número falta?',
-    subtitulo: 'Selecciona el número que falta en la línea.',
+    titulo: 'Números del 1 al 15',
+    subtitulo: 'Escucha el audio y selecciona la opción correcta.',
     id: 1,
-    link: 'https://www.educaplay.com/learning-resources/6232527-que_numero_falta.html',
+    link: 'https://es.educaplay.com/juego/11602573-numeros_del_1_al_15.html',
     bg: 'purple',
     color: 'white',
   },
   {
-    titulo: 'Tipos de corte',
-    subtitulo: 'Información en tipos de corte.',
+    titulo: 'Sumas y restas',
+    subtitulo: 'Selecciona la opción correcta y avanza.',
     id: 2,
-    link: 'https://www.educaplay.com/learning-resources/6682619-tipos_de_corte.html',
+    link: 'https://es.educaplay.com/juego/12215585-sumas.html',
     bg: 'white',
     color: 'purple',
   },
   {
-    titulo: 'Terminología básica',
-    subtitulo: 'Conceptos básicos de informática.',
+    titulo: 'Cuenta y relaciona',
+    subtitulo: 'Realiza las siguientes sumas con cálculo mental.',
     id: 3,
-    link: 'https://www.educaplay.com/learning-resources/10483039-terminologia_basica.html',
+    link: 'https://es.educaplay.com/juego/5726617-cuenta_y_relaciona.html',
     bg: 'purple',
     color: 'white',
   },
   {
-    titulo: 'Precaución vial',
+    titulo: 'Pensamiento Matemático 1-15',
     subtitulo:
-      'Observa con mucha atención las imágenes y selecciona el recuadro en blanco que se te indica.',
+      'Une cada dado con la tarjeta que tiene su número.',
     id: 4,
-    link: 'https://www.educaplay.com/learning-resources/5753565-precaucion_vial.html',
+    link: 'https://es.educaplay.com/juego/8042912-pensamiento_matematico_1_10.html',
     bg: 'white',
     color: 'purple',
   },
   {
-    titulo: 'Los números del 0 al 499',
-    subtitulo: 'Practiquemos los números.',
+    titulo: 'Mapa interactivo: Números',
+    subtitulo: 'Identifica los números del 1 al 20.',
     id: 5,
-    link: 'https://www.educaplay.com/learning-resources/5941127-los_numeros_del_0_al_499.html',
+    link: 'https://es.educaplay.com/juego/6824582-numeros.html',
     bg: 'purple',
     color: 'white',
   },
   {
-    titulo: 'Classroom vocabulary',
+    titulo: 'El hogar de los animales',
     subtitulo:
-      'Encuentra la palabra. Apóyate con la imagen y nombre de la palabra.',
+      'Jugaremos con un memorama donde los alumnos identificarán a que habitat pertenece cada uno de los animales.',
     id: 6,
-    link: 'https://www.educaplay.com/learning-resources/7974984-classroom_vocabulary.html',
+    link: 'https://www.educaplay.com/learning-resources/5274148-el_hogar_de_los_animales.html',
     bg: 'white',
     color: 'purple',
   },
@@ -131,6 +131,11 @@ const Homepage: NextPage = () => {
             </Link>
           </article>
         ))}
+      </section>
+
+      <section className='flex flex-col items-center justify-center gap-6 py-12'>
+        <h2 className='text-4xl font-bold text-purple-600 font-title'>La gallina papanata</h2>
+        <iframe width="560" height="355" src="https://www.youtube.com/embed/-7JX0hdXBPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className='w-full md:w-1/2'></iframe>
       </section>
     </div>
   );
