@@ -41,8 +41,7 @@ const juegos: Juego[] = [
   },
   {
     titulo: 'Pensamiento Matemático 1-15',
-    subtitulo:
-      'Une cada dado con la tarjeta que tiene su número.',
+    subtitulo: 'Une cada dado con la tarjeta que tiene su número.',
     id: 4,
     link: 'https://es.educaplay.com/juego/8042912-pensamiento_matematico_1_10.html',
     bg: 'white',
@@ -73,6 +72,8 @@ const Homepage: NextPage = () => {
       <Head>
         <title>Mtra. Jennie | ¡Aprende y diviertete!</title>
       </Head>
+      <div id="sfc81mp5d88yqtw1ac22kc5t8a87nyjmwyh"></div>
+      
       <header className="flex justify-center gap-4 items-center py-4 h-[10vh]">
         <h2 className="text-sm text-purple-600 font-title">
           Por maestra Jennie
@@ -105,8 +106,13 @@ const Homepage: NextPage = () => {
       <section className="grid md:grid-cols-2 lg:grid-cols-3">
         {juegos.map((juego) => (
           <article
-            className={`${juego.color == 'purple' ? 'text-white bg-purple-600' : 'text-purple-600 bg-white'}  p-6 flex flex-col justify-between gap-12`}
+            className={`${
+              juego.color == 'purple'
+                ? 'text-white bg-purple-600'
+                : 'text-purple-600 bg-white'
+            }  p-6 flex flex-col justify-between gap-12`}
             id={`juego${juego.id}`}
+            key={juego.id}
           >
             <header className="flex flex-col">
               <div className="flex flex-col">
@@ -125,7 +131,13 @@ const Homepage: NextPage = () => {
             <Link
               href={juego.link}
               passHref
-              className={`flex items-center justify-center py-2 rounded-md border-2 ${juego.color == "purple" ?  'border-white' : 'border-purple-600'}  ${juego.bg == "white" ? 'hover:bg-white hover:text-purple-600' : 'hover:bg-purple-600 hover:text-white'}`}
+              className={`flex items-center justify-center py-2 rounded-md border-2 ${
+                juego.color == 'purple' ? 'border-white' : 'border-purple-600'
+              }  ${
+                juego.bg == 'white'
+                  ? 'hover:bg-white hover:text-purple-600'
+                  : 'hover:bg-purple-600 hover:text-white'
+              }`}
             >
               ¡Juega este!
             </Link>
@@ -133,9 +145,20 @@ const Homepage: NextPage = () => {
         ))}
       </section>
 
-      <section className='flex flex-col items-center justify-center gap-6 py-12'>
-        <h2 className='text-4xl font-bold text-purple-600 font-title'>La gallina papanata</h2>
-        <iframe width="560" height="355" src="https://www.youtube.com/embed/-7JX0hdXBPo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className='w-full md:w-1/2'></iframe>
+      <section className="flex flex-col items-center justify-center gap-6 py-12">
+        <h2 className="text-4xl font-bold text-purple-600 font-title">
+          La gallina papanata
+        </h2>
+        <iframe
+          width="560"
+          height="355"
+          src="https://www.youtube.com/embed/-7JX0hdXBPo"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full md:w-1/2"
+        ></iframe>
       </section>
     </div>
   );
