@@ -107,6 +107,7 @@ const Homepage: NextPage = () => {
           <article
             className={`${juego.color == 'purple' ? 'text-white bg-purple-600' : 'text-purple-600 bg-white'}  p-6 flex flex-col justify-between gap-12`}
             id={`juego${juego.id}`}
+            key={juego.id}
           >
             <header className="flex flex-col">
               <div className="flex flex-col">
